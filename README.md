@@ -3,7 +3,7 @@
 This repo contains the following files
 - README.md
 - run_analysis.R - which cointains R-code to make the tidy-data if working directory contains the dataset "UCI HAR Dataset".
-- codebook.txt - describing the variables in the output data of the script
+- codebook.md - describing the variables in the output data of the script
 
 Credit to original data:
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013. 
