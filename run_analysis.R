@@ -85,7 +85,7 @@ std_columns  <- grep("std", colnames(data_total))
 #Subset to new data containing only mean and std
 new_columns  <- c(mean_columns, std_columns)      #all columns contain mean or std
 new_columns  <- new_columns[order(new_columns)]   #order by original col-number to keep original order
-data_meanstd <- data_total[, c(new_columns)] #subset
+data_total <- data_total[, c(new_columns, 562, 563)] #subset
 
 # Remove unused vectors
 rm(mean_columns, std_columns, new_columns)
