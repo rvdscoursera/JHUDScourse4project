@@ -138,3 +138,4 @@ data_tidy <- data_total %>% group_by(subjectIdentifier, activityLabel) %>% summa
 
 #output dataframe
 write.table(data_tidy, file = "data_tidy.txt", row.names = FALSE)
+ 
