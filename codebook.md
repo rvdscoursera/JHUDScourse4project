@@ -1,6 +1,6 @@
 # Code book
 
-The output data contains ** *means* ** of all **mean** and **standard deviation** variables by subject and activity (in that order) from the original data provided by:
+The output data contains ***means*** of all **mean** and **standard deviation** variables by subject and activity (in that order) from the original data provided by:
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
 
 Below you can find the codebook for the original data (please mind, that this project provides means of all variables (columns) of the original data, by subject and activity).
