@@ -77,10 +77,10 @@ rm(features, labels_total, subjects_total)
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 #Find columns that contain "mean" for finding mean-value columns
-mean_columns <- grep("mean()", colnames(data_total))
+mean_columns <- grep("mean\\(\\)", colnames(data_total))
 
 #Find columns that contain "std"
-std_columns  <- grep("std", colnames(data_total))
+std_columns  <- grep("std\\(\\)", colnames(data_total))
 
 #Subset to new data containing only mean and std
 new_columns  <- c(mean_columns, std_columns)      #all columns contain mean or std
