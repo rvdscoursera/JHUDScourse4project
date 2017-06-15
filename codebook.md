@@ -1,19 +1,14 @@
-=========
-Code book
-=========
+# Code book
 
-The output data contains means of all variables by subject and activity (in that order) from the original data provided by:
+The output data contains *means* of all **mean** and **standard deviation** variables by subject and activity (in that order) from the original data provided by:
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
-
 
 Below you can find the codebook for the original data (please mind, that this project provides means of all variables (columns) of the original data, by subject and activity).
 
 
-Original codebook:
+# Original codebook:
 
-=================
-Feature Selection 
-=================
+## Feature Selection 
 
 The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
 
