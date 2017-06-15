@@ -11,7 +11,7 @@ library(reshape2)
 #download.file(url = "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip", destfile = "Dataset.zip")
 
 #One can just run unzip to unzip dataset directly to wd
-#unzip(zipfile = paste0(project_path, "Dataset.zip"))
+#unzip(zipfile = "Dataset.zip")
 
 
 # look at folders & files
@@ -135,10 +135,6 @@ rm(activity_labels)
 #we group by subject, then activity, then use summarize_all to get mean of all columns
 #we should get 180 rows which is 30 subjects * 6 activities
 data_tidy <- data_total %>% group_by(subjectIdentifier, activityLabel) %>% summarise_all(mean)
-
-#The we just need to melt data to a tidy-format using the reshape2 package
-#now we should only get 4 columns
-data_tidy <- melt(data = data_tidy, id = c("subjectIdentifier", "activityLabel"))
 
 #rename "value" column to mean, as this is more correct (as we just took the mean of the variables)
 colnames(data_tidy)[which(colnames(data_tidy) == "value")] <- "mean"
