@@ -136,9 +136,5 @@ rm(activity_labels)
 #we should get 180 rows which is 30 subjects * 6 activities
 data_tidy <- data_total %>% group_by(subjectIdentifier, activityLabel) %>% summarise_all(mean)
 
-#rename "value" column to mean, as this is more correct (as we just took the mean of the variables)
-colnames(data_tidy)[which(colnames(data_tidy) == "value")] <- "mean"
-colnames(data_tidy)
-
 #output dataframe
 write.table(data_tidy, file = "data_tidy.txt", row.names = FALSE)
